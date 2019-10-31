@@ -28,5 +28,5 @@ mv jx /usr/local/bin/
 # Set JAVA_HOME	
 echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> /home/vagrant/.bashrc
 
-# Preclone Jenkins X Dev environment 
-git clone https://github.com/DevOpsCamp2019/environment-deliverymachine-one-dev.git /home/vagrant/repos/delivermachine-dev
+# Preclone Jenkins X staging environment config to jx boot it
+git clone https://github.com/DevOpsCamp2019/environment-deliverymachine-one-staging.git /home/vagrant/repos/environment-deliverymachine-one-staging
