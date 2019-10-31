@@ -14,10 +14,11 @@ apt-get install -y git \
 	kubectl \
 	openjdk-11-jdk \
 	zsh \
-	fonts-powerline
+	fonts-powerline \
+	sntp
 	
 # Oh My Zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+yes no | sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	
 # Jenkins X	
 curl -L "https://github.com/jenkins-x/jx/releases/download/$(curl --silent "https://github.com/jenkins-x/jx/releases/latest" | sed 's#.*tag/\(.*\)\".*#\1#')/jx-linux-amd64.tar.gz" | tar xzv "jx"
