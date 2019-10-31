@@ -15,7 +15,8 @@ apt-get install -y git \
 	openjdk-11-jdk \
 	zsh \
 	fonts-powerline \
-	sntp
+	sntp \
+	jq
 	
 # Oh My Zsh
 yes no | sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
