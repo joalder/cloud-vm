@@ -16,7 +16,12 @@ apt-get install -y git \
 	zsh \
 	fonts-powerline \
 	sntp \
-	jq
+	jq \
+	docker \
+	docker.io
+	
+# Add vagrant user to docker group so no sudo is required
+usermod --append -G docker vagrant
 	
 # Oh My Zsh
 yes no | sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
